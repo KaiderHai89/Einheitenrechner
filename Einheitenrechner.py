@@ -1,0 +1,5 @@
+skrupel = float(input("Wie viele Skrupel hast du? "))
+knoten = float(input("Mit wie viel Knoten fährst du? "))
+lachter = float(input("Wie viele Lachter hast du? "))
+gert = float(input("Wie viele Gerts hast du? "))
+koenigselle = float(input("Wie viele Königsellen hast du? "))
