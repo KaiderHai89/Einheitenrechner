@@ -1,3 +1,8 @@
+# Programm zum Umrechnen von Einheiten
+# Ersteller: Kai Meiners
+# Datum 20.08.24
+# Letzte Änderung: 20.08.24 
+######################################################################
 # Einheiten definieren
 skrupel = float(input("Wie viele Skrupel hast du? "))
 knoten = float(input("Mit wie viel Knoten fährst du? "))
