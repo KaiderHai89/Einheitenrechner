@@ -5,6 +5,8 @@
 ######################################################################
 # Menü denfinieren
 def auswahlmenue():
+    print(" ")
+    print("############################")
     print("Willkommen im Auswahlmenü")
     print("Was willst du umrechen?")
     print("1. Skrupel")
@@ -53,7 +55,7 @@ def option_5():
     umrkoe = koenigselle * 0.524
     print(koenigselle, "Koenigsellen sind", umrkoe, "Meter")
     
-#Logik hinterm Auswahlmenü
+# Logik hinterm Auswahlmenü
 def main():
     while True:
         auswahlmenue()
@@ -81,7 +83,7 @@ def main():
                   "Bitte Zahl ohne Punkt angeben")
         # Wenn die eingegebene option nicht vorhanden ist, erscheint diese Fehlermeldung.    
 
-#Schleife damit das Menü direkt wieder erscheint
+# Schleifenbefehl
 if True == True:
     main()
     
