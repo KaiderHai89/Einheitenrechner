@@ -1,3 +1,9 @@
+# Programm zum Umrechnen von Einheiten
+# Ersteller: Kai Meiners / Josie Wöste
+# Datum 20.08.24
+# Letzte Änderung: 01.09.24 
+######################################################################
+# Menü denfinieren
 def auswahlmenue():
     print("Willkommen im Auswahlmenü")
     print("Was willst du umrechen?")
@@ -8,6 +14,7 @@ def auswahlmenue():
     print("5. Koenigselle")
     print("6. Beenden")
 
+# Ausgabe Einheiten
 def option_1():
     print("Du hast Skrupel ausgewählt.")
     skrupel = float(input("Wie viel Skupel hast du?: "))
@@ -38,6 +45,7 @@ def option_5():
     umrkoe = koenigselle * 0.524
     print(koenigselle, "Koenigsellen sind", umrkoe, "Meter")
     
+#Logik hinterm Auswahlmenü
 def main():
     while True:
         auswahlmenue()
@@ -60,6 +68,7 @@ def main():
             print("Ungültige Eingabe, bitte versuche es erneut."
                   "Bitte Zahl ohne Punkt angeben")
 
+#Schleife damit das Menü direkt wieder erscheint
 if True == True:
     main()
     
