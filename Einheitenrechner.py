@@ -16,20 +16,14 @@ def auswahlmenue():
     print("5. Koenigselle")
     print("6. Beenden")
 
-# Ausgabe Einheiten
+# Ausgabe Einheiten, hier werden die Einheiten nach Auswahl mit ihrem Umrechnungsfaktor umgerechnet.
 def option_1():
     print("Du hast Skrupel ausgewählt.")
     skrupel = float(input("Wie viel Skupel hast du?: "))
-    # float ist der Datentyp und steht für Gleitkommazahlen, zb 5.55.
-    # int zb ist der Datentyp für Ganzzahlen ohne Punkt.
-    # input ist eine Funktion für die Eingabe von Daten über Tastatur.
-    
+    # float da wir so Gleitkommazahlen benutzen können.
     umrskr = skrupel * 1.25
-    # Hier findet die eigentliche Umrechnung statt, wir schreiben das Produkt aus
-    # eingegebenem Wert und Umrechnungsfaktor in eine Variable, die wir ausgeben können.
-    
-    print(skrupel, "Skrupel sind", umrskr, "Gramm")
-    # print sorgt für Textausgabe.
+    # die umgerechneten werde werden in die "umr" variablen gechrieben, zb. umrskr.
+    print(skrupel, "Skrupel sind", umrskr, "Gramm") 
 
 def option_2():
     print("Du hast Knoten ausgewählt.")
@@ -63,8 +57,6 @@ def main():
 
         if wahl == "1":
             option_1()
-        # Hier wird die Eingabe mit unseren optionen fürs Menü verglichen.
-
         elif wahl == "2":
             option_2()
         elif wahl == "3":
@@ -74,14 +66,17 @@ def main():
         elif wahl == "5":
             option_5()
         elif wahl == "6":
-            print("Programm wird beendet...")
+            print(" ")
+            print("########################")
+            print("Programm wid beendet...")
+            print("########################")
             break
-        # break beendet eine Schleife und somit unser Auswahlmenü.
-        
+        # wir benutzen break zum beenden der Schleife.
         else:
-            print("Ungültige Eingabe, bitte versuche es erneut."
-                  "Bitte Zahl ohne Punkt angeben")
-        # Wenn die eingegebene option nicht vorhanden ist, erscheint diese Fehlermeldung.    
+            print(" ")
+            print("#################################################")
+            print("Ungültige Eingabe, bitte Zahl ohne Punkt angeben.")
+            print("#################################################")
 
 # Schleifenbefehl
 if True == True:
