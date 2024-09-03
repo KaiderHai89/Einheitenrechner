@@ -3,13 +3,16 @@
 # Datum 20.08.24
 # Letzte Änderung: 01.09.24 
 ######################################################################
+# Variablen definieren
+
+
 # Menü denfinieren
 def auswahlmenue():
     print(" ")
     print("############################")
     print("Willkommen im Auswahlmenü")
     print("Was willst du umrechen?")
-    print("1. Skrupel")
+    print("1. Skrupel -> Gramm")
     print("2. Knoten")
     print("3. Lachter")
     print("4. Gert")
@@ -17,12 +20,13 @@ def auswahlmenue():
     print("6. Beenden")
 
 # Ausgabe Einheiten, hier werden die Einheiten nach Auswahl mit ihrem Umrechnungsfaktor umgerechnet.
-def option_1():
+
+def umrechnung_skrupel_in_gramm():
     print("Du hast Skrupel ausgewählt.")
     skrupel = float(input("Wie viel Skupel hast du?: "))
     # float da wir so Gleitkommazahlen benutzen können.
     umrskr = skrupel * 1.25
-    # die umgerechneten werde werden in die "umr" variablen gechrieben, zb. umrskr.
+    # die umgerechneten Werte werden in die "umr" variablen gechrieben, zb. umrskr.
     print(skrupel, "Skrupel sind", umrskr, "Gramm") 
 
 def option_2():
@@ -50,34 +54,29 @@ def option_5():
     print(koenigselle, "Koenigsellen sind", umrkoe, "Meter")
     
 # Logik hinterm Auswahlmenü
-def main():
-    while True:
-        auswahlmenue()
-        wahl = input("Bitte wähle eine Option (1-6): ")
+while True:
+    auswahlmenue()
+    wahl = input("Bitte wähle eine Option (1-6): ")
 
-        if wahl == "1":
-            option_1()
-        elif wahl == "2":
-            option_2()
-        elif wahl == "3":
-            option_3()
-        elif wahl == "4":
-            option_4()
-        elif wahl == "5":
-            option_5()
-        elif wahl == "6":
-            print(" ")
-            print("########################")
-            print("Programm wid beendet...")
-            print("########################")
-            break
-        # wir benutzen break zum beenden der Schleife.
-        else:
-            print(" ")
-            print("#################################################")
-            print("Ungültige Eingabe, bitte Zahl ohne Punkt angeben.")
-            print("#################################################")
-
-# Schleifenbefehl
-if True == True:
-    main()
+    if wahl == "1":
+        umrechnung_skrupel_in_gramm()
+    elif wahl == "2":
+        option_2()
+    elif wahl == "3":
+        option_3()
+    elif wahl == "4":
+        option_4()
+    elif wahl == "5":
+        option_5()
+    elif wahl == "6":
+        print(" ")
+        print("########################")
+        print("Programm wid beendet...")
+        print("########################")
+        break
+    # wir benutzen break zum beenden der Schleife.
+    else:
+        print(" ")
+        print("#################################################")
+        print("Ungültige Eingabe, bitte Zahl ohne Punkt angeben.")
+        print("#################################################")
