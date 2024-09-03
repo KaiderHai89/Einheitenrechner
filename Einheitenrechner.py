@@ -13,10 +13,10 @@ def auswahlmenue():
     print("Willkommen im Auswahlmenü")
     print("Was willst du umrechen?")
     print("1. Skrupel -> Gramm")
-    print("2. Knoten")
-    print("3. Lachter")
-    print("4. Gert")
-    print("5. Koenigselle")
+    print("2. Knoten -> Km/h")
+    print("3. Lachter -> Meter")
+    print("4. Gert -> Meter")
+    print("5. Koenigselle -> Meter")
     print("6. Beenden")
 
 # Ausgabe Einheiten, hier werden die Einheiten nach Auswahl mit ihrem Umrechnungsfaktor umgerechnet.
@@ -25,33 +25,33 @@ def umrechnung_skrupel_in_gramm():
     print("Du hast Skrupel ausgewählt.")
     skrupel = float(input("Wie viel Skupel hast du?: "))
     # float da wir so Gleitkommazahlen benutzen können.
-    umrskr = skrupel * 1.25
+    umrskrupel = skrupel * 1.25
     # die umgerechneten Werte werden in die "umr" variablen gechrieben, zb. umrskr.
-    print(skrupel, "Skrupel sind", umrskr, "Gramm") 
+    print(skrupel, "Skrupel sind", umrskrupel, "Gramm") 
 
-def option_2():
+def umrechnung_knoten_in_kmph():
     print("Du hast Knoten ausgewählt.")
     knoten = float(input("Wie viel Knoten hast du?: "))
-    umrkno = knoten * 1.852
-    print(knoten, "Konten sind", umrkno, "Kilometer pro Stunde")
+    umrknoten = knoten * 1.852
+    print(knoten, "Konten sind", umrknoten, "Kilometer pro Stunde")
 
-def option_3():
+def umrechnung_lachter_in_meter():
     print("Du hast Lachter ausgewählt.")
     lachter = float(input("Wie viele Lachter hast du? "))
-    umrlac = lachter * 1.938
-    print(lachter, "Lachter sind", umrlac, "Meter")
+    umrlachter = lachter * 1.938
+    print(lachter, "Lachter sind", umrlachter, "Meter")
     
-def option_4():
+def umrechnung_gert_in_meter():
     print("Du hast Gert ausgewählt.")
     gert = float(input("Wie viele Gerts hats du?: "))
     umrgert = gert * 3.6
     print(gert, "Gert sind", umrgert, "Meter")
     
-def option_5():
+def umrechnung_koenigselle_in_meter():
     print("Du hast Koenigselle ausgewählt.")
     koenigselle = float(input("Wie viele Koenigsellen hast du?: "))
-    umrkoe = koenigselle * 0.524
-    print(koenigselle, "Koenigsellen sind", umrkoe, "Meter")
+    umrkoenigselle = koenigselle * 0.524
+    print(koenigselle, "Koenigsellen sind", umrkoenigselle, "Meter")
     
 # Logik hinterm Auswahlmenü
 while True:
@@ -61,13 +61,13 @@ while True:
     if wahl == "1":
         umrechnung_skrupel_in_gramm()
     elif wahl == "2":
-        option_2()
+        umrechnung_knoten_in_kmph()
     elif wahl == "3":
-        option_3()
+        umrechnung_lachter_in_meter()
     elif wahl == "4":
-        option_4()
+        umrechnung_gert_in_meter()
     elif wahl == "5":
-        option_5()
+        umrechnung_koenigselle_in_meter()
     elif wahl == "6":
         print(" ")
         print("########################")
