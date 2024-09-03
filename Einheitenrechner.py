@@ -81,4 +81,3 @@ def main():
 # Schleifenbefehl
 if True == True:
     main()
-    
